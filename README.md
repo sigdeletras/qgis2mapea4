@@ -16,16 +16,22 @@ Igualmente, puede descargarse el código en formato zip o realizar un *clone* de
 
 Ejecutando el complemento desde el el icono <img src="icon.png" height="25" width="25"> o desde el menú **Web>QGIS a Mapea4**, aparecerá un formulario con las distintas opciones del complemento.
 
+- **Nombre de la capa**. Se podrá añadir el nombre de la capa que aparecerá en el visor.
+- **Selección de capa vectorial**. Presenta un desplegable con las capas desplegables cargadas en el proyecto de QGIS. En el caso de tener elementos seleccionados permite crear el visor solo con ellos.
+- **Ubicación de archivos**: Directorio local donde se creará la carpeta con los ficheros del visor.
+- **Mapas base**: Permite seleccionar los mapas base del visor. En esta versión son los datos del proyecto de Callejero Digital de Andalucía Unificado (CDAU), ortoimagen y/o combinación de ambos.
+- **Opciones del visor**. Permite añadir distintas opciones y herramientas al visor incluidas en Mapea4
+- **Complementos**: Al API permite añadir un conjunto variado de [complementos](https://github.com/sigcorporativo-ja/Mapea4/wiki/Plugins). 
+
 ![Formulario](img/formulario.png)
 
-- Nombre de la capa. Se podrá añadir el nombre de la capa que aparecerá en el visor.
-- Selección de capa vectorial. Presenta un desplegable con las capas desplegables cargadas en el proyecto de QGIS. En el caso de tener elementos seleccionados permite crear el visor solo con ellos.
-- Ubicación de archivos: Directorio local donde se creará la carpeta con los ficheros del visor.
-- Mapas base: Permite seleccionar los mapas base del visor. En esta versión son los datos del proyecto de Callejero Digital de Andalucía Unificado (CDAU), ortoimagen y/o combinación de ambos.
-- Opciones del visor. Permite añadir distintas opciones y herramientas al visor incluidas en Mapea4
-- Complementos: Al API permite añadir un conjunto variado de [complementos](https://github.com/sigcorporativo-ja/Mapea4/wiki/Plugins). En QGIS2Mapea4 se ha añadido el complemento de búsqueda de callejero. Una vez activado, se debe seleccionar alguno de los municipios de Andalucía.
+En QGIS2Mapea4 se ha añadido el complemento de búsqueda de callejero. Una vez activado, se debe seleccionar alguno de los municipios de Andalucía.
+
+## Consulta de atributos
 
 Gracias a Mapea4, se puede de forma automática acceder a los atributos de la capa publicada simplemente haciendo clic en alguna de las geometrías.
+
+![Formulario](img/info_popup.png)
 
 ## Añadir el visor a nuestra web.
 
