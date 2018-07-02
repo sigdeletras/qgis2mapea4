@@ -10,11 +10,11 @@ Para más información puede consultarse la entrada en [SIGdeletras.com](http://
 
 El complemento puede ser instalado desde el menú <b>Complementos>Administrar e instalar complementos</b> de QGIS. Para localizar de forma rápida el complemento puede introducirse el término <i>"mapea"</i> en la herramienta de búsqueda.
 
-Igualmente, puede descargarse el códifo en formato zip o realizar un clone de este respoistorio e instlar el complemento desde la herramienta de instlar mediante zip que inclute el Administrador de complementos de QGIS 3-
+Igualmente, puede descargarse el código en formato zip o realizar un *clone* de este repositorio e instalar el QGIS2Mpaea4 desde la herramienta de instalar mediante zip que incluye el Administrador de complementos de QGIS a partir de la versión 3.
 
 ## Usos y opciones
 
-Ejecutando el complemento desde el nuevo icono añadido o desde el menú Web, aparecerá un formulario con las distintas opciones del complemento.
+Ejecutando el complemento desde el el icono <img src="icon.png" height="20" width="20"> o desde el menú **Web>QGIS a Mapea4**, aparecerá un formulario con las distintas opciones del complemento.
 
 ![Formulario](formulario.png)
 
