@@ -1,32 +1,48 @@
 # QGIS2Mapea4 (V0.1) <img src="icon.png" height="42" width="42">
 
+Complemento para QGIS 3.* que crea un visor de mapas web pa partir de una capa vectorial usando la API Mapea4.
+
+Toda la información sobre la API Mapea4 desarollada dentro del SIG Corporativo de la Junta de Andalucía puede ser consultada en el siguiente repositorio [https://github.com/sigcorporativo-ja/Mapea4](https://github.com/sigcorporativo-ja/Mapea4)
+
 Para más información puede consultarse la entrada en [SIGdeletras.com](http://www.sigdeletras.com/2017/blog/plugin-de-qgis-para-descarga-de-datos-catastrales-inspire/)
 
-## Instalar plugin
+## Instalación plugin
 
-**Disponible para 3.0.***
+El complemento puede ser instalado desde el menú <b>Complementos>Administrar e instalar complementos</b> de QGIS. Para localizar de forma rápida el complemento puede introducirse el término <i>"mapea"</i> en la herramienta de búsqueda.
 
-El complemento puede ser instalado desde el menú <b>Complementos>Administrar e instalar complementos</b> de QGIS. Para localizar de forma rápida el complemento puede introducirse el término <i>"catastro"</i> en la herramienta de búsqueda.
+Igualmente, puede descargarse el códifo en formato zip o realizar un clone de este respoistorio e instlar el complemento desde la herramienta de instlar mediante zip que inclute el Administrador de complementos de QGIS 3-
 
-## Uso
+## Usos y opciones
 
-Tras su instalación el plugin puede ser ejecutado desde la barra de herramientas o bien desde el menú <b>Complementos>Descarga Catrastro Inspire</b> o bien <b>Spanish Inspire Catastral Downloader</b> si tenemos instalado QGIS en otro idioma.
+Ejecutando el complemento desde el nuevo icono añadido o desde el menú Web, aparecerá un formulario con las distintas opciones del complemento.
 
-<img src="help/ui.PNG" width="50%">
+![Formulario](formulario.png)
 
-Una vez ejecutado el complemento se debe <b>obligatoriamente</b>:
-<ul>
-<li>Seleccionar la provincia</li>
-<li>Seleccionar el municipio</li>
-<li>Indicar la ruta local de descarga</li>
-<li>Indicar el conjunto de capas a descargar: Parcelas Catastrales, Edificios y/o Direcciones</li>
-</ul>
+- Nombre de la capa. Se podrá añadir el nombre de la capa que aparecerá en el visor.
+- Selección de capa vectorial. Presenta un desplegable con las capas desplegables cargadas en el proyecto de QGIS. En el caso de tener elementos seleccionados permite crear el visor solo con ellos.
+- Ubicación de archivos: Directorio local donde se creará la carpeta con los ficheros del visor.
+- Mapas base: Permite seleccionar los mapas base del visor. En esta versión son los datos del proyecto de Callejero Digital de Andalucía Unificado (CDAU), ortoimagen y/o combinación de ambos.
+- Opciones del visor. Permite añadir distintas opciones y herramientas al visor incluidas en Mapea4
+- Complementos: Al API permite añadir un conjunto variado de [complementos](https://github.com/sigcorporativo-ja/Mapea4/wiki/Plugins). En QGIS2Mapea4 se ha añadido el complemento de búsqueda de callejero. Una vez activado, se debe seleccionar alguno de los municipios de Andalucía.
 
-El programa descarca los GML correspondientes y lso convierte a formato GeoJSON en la ubicación indicada y dentro de una carpeta con el códifo INE del municipio seleccionado. Si se desea añadir las capas GeoJSON descargardas al proyecto QGIS activo se debe marcar la casilla correspondiente. Si se desea pueden cargarse a posteriori tanto los GeoJSON como los GML originales, aunque en la versión QGIS 3.* no se visualizan correctamente los GML catastrales tal y como son suministrados.
+Gracias a Mapea4, se puede de forma automática acceder a los atributos de la capa publicada simplemente haciendo clic en alguna de las geometrías.
+
+## Añadir el visor a nuestra web.
+
+La carpeta generada puede ser subida directamente a un hospedaje web. Accediendo a la URL dominio y completando con la ubicación de los ficheros tendremos la dirección del visor.  Por ejemplo http
+
+Podemos también embeber el visor a una publicación de nuestra web o blog. Para ello se añadirá la dirección del visor dentro de una etiqueta <iframe> y los parámetros básicos para su configuración.
+
+El código de ejemplos y el resultado lo tenéis a continuación.
+
+	<iframe width="525" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+	src=""> </iframe> 
 
 ## 2DO
 
-- Posibilidad de applicar simbología a las capas
+- Seleccionar varias capas vectoriales
+- Ampliar los complementos de Mapea4 a instalar
+- Aplicación de simbilogías para mapas temáticos (coropletas, categorizados, cluster)
 
 ## Changelog
-- 22.06.2018 V1.1: 
+- 02.07.2018 V0.1: Primera versión
