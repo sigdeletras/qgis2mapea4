@@ -1,6 +1,6 @@
 # QGIS2Mapea4 (V0.1) <img src="icon.png" height="42" width="42">
 
-**Complemento para QGIS 3.* que crea un visor de mapas web a partir de una capa vectorial usando la API Mapea4 con datos ubicados geográficamente en Andalucia (España)**.
+**Complemento para QGIS 3 que crea un visor de mapas web a partir de una capa vectorial usando la API Mapea4 con datos ubicados geográficamente en Andalucia (España)**.
 
 Toda la información sobre la API Mapea4 desarollada dentro del SIG Corporativo de la Junta de Andalucía puede ser consultada en el siguiente repositorio [https://github.com/sigcorporativo-ja/Mapea4](https://github.com/sigcorporativo-ja/Mapea4)
 
