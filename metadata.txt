@@ -30,7 +30,7 @@ repository=https://github.com/sigdeletras/qgis2mapea4
 # Tags are comma separated with spaces allowed
 tags=web,visor,webmapping,webmap,webmaps,OpenLayers,OL3,HTML,Javascript,CSS,export,Andalucía,España,Mapea4,SIG Corporativo
 
-homepage=http://homepage
+
 category=Web
 icon=icon.png
 
