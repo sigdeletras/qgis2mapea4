@@ -14,9 +14,9 @@ Igualmente, puede descargarse el código en formato zip o realizar un *clone* de
 
 ## Usos y opciones
 
-Ejecutando el complemento desde el el icono <img src="icon.png" height="20" width="20"> o desde el menú **Web>QGIS a Mapea4**, aparecerá un formulario con las distintas opciones del complemento.
+Ejecutando el complemento desde el el icono <img src="icon.png" height="25" width="25"> o desde el menú **Web>QGIS a Mapea4**, aparecerá un formulario con las distintas opciones del complemento.
 
-![Formulario](formulario.png)
+![Formulario](img/formulario.png)
 
 - Nombre de la capa. Se podrá añadir el nombre de la capa que aparecerá en el visor.
 - Selección de capa vectorial. Presenta un desplegable con las capas desplegables cargadas en el proyecto de QGIS. En el caso de tener elementos seleccionados permite crear el visor solo con ellos.
