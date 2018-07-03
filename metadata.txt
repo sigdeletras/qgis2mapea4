@@ -2,19 +2,16 @@
 name=QGIS a Mapea4
 qgisMinimumVersion=3.0
 qgisMaximumVersion=3.99
-description=Complemento para crear visor web con datos goegráficos de Andalucía (España) usando la librería Mapea4
+description=Complemento para crear visores de mapas web con datos geográficos de Andalucía (España) usando la librería Mapea4
 version=0.1
 author=Patricio Soriano :: SIGdeletras
 email=pasoriano@sigdeletras.com
 
-about=<p>El complemento QGIS2Mapea4 tiene como objetivo facilitar a los usuarios de QGIS que trabajen con datos ubicados en Andalucía, la generación de visores de mapas usando la librería Mapea4.</p><p>La librería javascript Mapea4, basada en OpenLayers, es un desarrollo dentro del SIG corporatico de la Junta de Andalucía. En la siguiente dirección <a href="https://github.com/sigcorporativo-ja/Mapea4">https://github.com/sigcorporativo-ja/Mapea4</a> puede consultarse toda la información sobre la misma.</p><p><b>QGIS2Mapea4 es un desarrollo personal de Patricio Soriano (sigdeletras.com)</b></p>
+about=<p>El complemento QGIS2Mapea4 tiene como objetivo facilitar a los usuarios de QGIS que trabajen con datos ubicados en Andalucía, la generación de visores web de mapas usando la librería Mapea4.</p><p>La librería javascript Mapea4, basada en OpenLayers, es un desarrollo dentro del SIG Corporatico de la Junta de Andalucía. En la siguiente dirección <a href="https://github.com/sigcorporativo-ja/Mapea4">https://github.com/sigcorporativo-ja/Mapea4</a> puede consultarse toda la información sobre la misma.</p><p>QGIS2Mapea4 es un desarrollo personal de Patricio Soriano (sigdeletras.com)</p>
 
 homepage=http://www.sigdeletras.com
 tracker=https://github.com/sigdeletras/qgis2mapea4
 repository=https://github.com/sigdeletras/qgis2mapea4
-# End of mandatory metadata
-
-# Recommended items:
 
 
 changelog=02.07.2018 V0.1: Primera versión
@@ -23,4 +20,3 @@ category=Web
 icon=icon.png
 experimental=False
 deprecated=False
-
