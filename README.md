@@ -44,13 +44,13 @@ Accediendo a la URL dominio y completando con la ubicación de los ficheros tend
 
 Podemos también embeber el visor a una publicación de nuestra web o blog. Para ello se añadirá la dirección del visor dentro de una etiqueta <iframe> y los parámetros básicos para su configuración.
 
-El código de ejemplos y el resultado lo tenéis a continuación.
+Ejemplo de códido iframe.
 
 	<iframe width="525" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 	src="http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/"> </iframe> 
 
 
-<iframe width="560" height="315" src="http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+## 2DO
 
 - Seleccionar varias capas vectoriales
 - Ampliar los complementos de Mapea4 a instalar
