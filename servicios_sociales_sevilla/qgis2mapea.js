@@ -1,4 +1,4 @@
-var proxy = false
+var proxy = 'false'
 var layerName = 'Servicios Sociales (Datos Abiertos Sevilla)'
 var fillColor = '#3dc439'
 var strokeColor = 'blue'
