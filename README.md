@@ -38,7 +38,9 @@ Gracias a Mapea4, se puede de forma automática acceder a los atributos de la ca
 
 ## Añadir el visor a nuestra web.
 
-La carpeta generada puede ser subida directamente a un hospedaje web. Accediendo a la URL dominio y completando con la ubicación de los ficheros tendremos la dirección del visor.  Por ejemplo http
+La carpeta generada puede ser subida directamente a un hospedaje web. 
+
+Accediendo a la URL dominio y completando con la ubicación de los ficheros tendremos la dirección del visor.  Por ejemplo [http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/](http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/)
 
 Podemos también embeber el visor a una publicación de nuestra web o blog. Para ello se añadirá la dirección del visor dentro de una etiqueta <iframe> y los parámetros básicos para su configuración.
 
