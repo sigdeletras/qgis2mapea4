@@ -5,7 +5,7 @@ var strokeColor = 'blue'
 var bb = [233470.824576,4135243.407779,240069.982919,4145294.270417]
 var basemaps = ['cdau', 'cdau_satelite', 'cdau_hibrido']
 
-M.proxy(proxy);
+//M.proxy(proxy);
 
 mapajs = M.map({
     container: "map",
