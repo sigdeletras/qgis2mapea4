@@ -47,8 +47,10 @@ Podemos también embeber el visor a una publicación de nuestra web o blog. Para
 El código de ejemplos y el resultado lo tenéis a continuación.
 
 	<iframe width="525" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-	src=""> </iframe> 
+	src="http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/"> </iframe> 
 
+<iframe width="525" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+	src="http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/"> </iframe>
 ## 2DO
 
 - Seleccionar varias capas vectoriales
