@@ -1,22 +1,15 @@
-codejs1 = """M.proxy(false);
+codejs1 = """M.proxy(proxy);
 
 mapajs = M.map({
     container: "map",
     controls:"""
 codejs2 =""",
-    // center: {
-      // x: 350373,
-      // y: 4190372
-    // },
     // zoom: 7,
     bbox : bb,
     wmcfiles: basemaps
   });
-
-M.proxy(false);
-
+  
 """
-
 
 pointSyle = """
 // Define estilo punto
@@ -76,6 +69,5 @@ var layerQGIS2Mapea4 = new M.layer.GeoJSON(
 layerQGIS2Mapea4.setStyle(estiloLayer);
 mapajs.addLayers(layerQGIS2Mapea4);
 
-M.proxy(false);
 
 """

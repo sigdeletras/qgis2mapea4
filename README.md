@@ -17,6 +17,7 @@ Igualmente, puede descargarse el código en formato zip o realizar un *clone* de
 Ejecutando el complemento desde el el icono <img src="icon.png" height="25" width="25"> o desde el menú **Web>QGIS a Mapea4**, aparecerá un formulario con las distintas opciones del complemento.
 
 - **Nombre de la capa**. Se podrá añadir el nombre de la capa que aparecerá en el visor.
+- **Proxy**. Activa o desactiva el proxy de la API. Para archivos en local el proxy debe estar desactivado. Para archivos en servidor debe estar activado.
 - **Selección de capa vectorial**. Presenta un desplegable con las capas desplegables cargadas en el proyecto de QGIS. En el caso de tener elementos seleccionados permite crear el visor solo con ellos.
 - **Ubicación de archivos**: Directorio local donde se creará la carpeta con los ficheros del visor.
 - **Mapas base**: Permite seleccionar los mapas base del visor. En esta versión son los datos del proyecto de Callejero Digital de Andalucía Unificado (CDAU), ortoimagen y/o combinación de ambos.

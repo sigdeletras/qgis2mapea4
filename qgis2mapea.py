@@ -400,6 +400,21 @@ class QGIS2Mapea4:
         
         return codINE
 
+    def proxy(self):
+        """
+        Proxy
+        """
+        proxyState = "False"
+
+        # if self.dlg.groupBox_proxy == self.dlg.radioButton_on.isChecked():
+        if self.dlg.radioButton_on.isChecked():
+            proxyState = "true"
+            return proxyState
+        # elif self.dlg.groupBox_proxy == self.dlg.radioButton_off.isChecked():
+        elif self.dlg.radioButton_off.isChecked():
+            proxyState = "false"
+            return proxyState
+
     def createdFiles(self):
         """CreatedFiles data funtion"""
         
@@ -410,7 +425,7 @@ class QGIS2Mapea4:
             self.msgBar.pushMessage('Debe indicar una ruta donde crear los ficheros' , level=Qgis.Info, duration=3)
         else:
             projectpath = self.dlg.lineEdit_path.text()
-            # self.msgBar.pushMessage(self.layerEPSG(layer), level=Qgis.Info, duration=3)
+            self.msgBar.pushMessage(self.proxy(), level=Qgis.Info, duration=3)
             try:
                 
                 # Crea directorio
@@ -459,6 +474,7 @@ class QGIS2Mapea4:
                         with open(jsPathFile, "w", encoding='utf-8') as jsFile:
                             # Generación de variables
 
+                            jsFile.write("var proxy = %s\n" %(self.proxy()))
                             jsFile.write("var layerName = \'%s\'\n" %(unicode_title))
                             jsFile.write("var fillColor = \'%s\'\n" %(self.getColor(layer)))
                             jsFile.write("var strokeColor = \'blue\'\n")
@@ -520,11 +536,11 @@ class QGIS2Mapea4:
         self.dlg.checkBox_layerswicher.setChecked(0)
         self.dlg.checkBox_layerswicher.stateChanged.connect(self.controlLayerswitcher)
 
-        self.dlg.checkBox_cdau.setChecked(1)
-        self.dlg.checkBox_cdau.stateChanged.connect(self.mapBaseCDAU)
-
         self.dlg.checkBox_ortho.setChecked(1)
         self.dlg.checkBox_ortho.stateChanged.connect(self.mapBaseOrtho)
+        
+        self.dlg.checkBox_cdau.setChecked(1)
+        self.dlg.checkBox_cdau.stateChanged.connect(self.mapBaseCDAU)
 
         self.dlg.checkBox_hybrid.setChecked(1)
         self.dlg.checkBox_hybrid.stateChanged.connect(self.mapBaseHybrid)
