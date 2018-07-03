@@ -410,7 +410,7 @@ class QGIS2Mapea4:
             self.msgBar.pushMessage('Debe indicar una ruta donde crear los ficheros' , level=Qgis.Info, duration=3)
         else:
             projectpath = self.dlg.lineEdit_path.text()
-            self.msgBar.pushMessage(self.layerEPSG(layer), level=Qgis.Info, duration=3)
+            # self.msgBar.pushMessage(self.layerEPSG(layer), level=Qgis.Info, duration=3)
             try:
                 
                 # Crea directorio
