@@ -49,8 +49,10 @@ El código de ejemplos y el resultado lo tenéis a continuación.
 	<iframe width="525" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 	src="http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/"> </iframe> 
 
-<iframe width="525" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+[![asciicast]<iframe width="525" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
 	src="http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/"> </iframe>
+	
+[![iframe][http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/](http://www.sigdeletras.com/qgis2mapea4/servicios_sociales_sevilla/)
 ## 2DO
 
 - Seleccionar varias capas vectoriales
