@@ -251,6 +251,15 @@ class QGIS2Mapea4:
         else:
             QgsVectorFileWriter.writeAsVectorFormat(lgeojson[0], ruta + '\\' + self.formatLayerName(l) + '.geojson', 'utf-8', crs25830 , 'GeoJSON')
 
+    def layerEPSG(self,l):
+        """EPSG de la capa"""
+        layer = QgsProject.instance().mapLayersByName(l)
+
+        lyrCRS = layer[0].crs().authid()
+
+        return str(lyrCRS[5:])
+
+
     def showList(self):
         """Genera lista de municipipios"""
         if self.dlg.checkBox_searchstreet.isChecked():
@@ -401,7 +410,7 @@ class QGIS2Mapea4:
             self.msgBar.pushMessage('Debe indicar una ruta donde crear los ficheros' , level=Qgis.Info, duration=3)
         else:
             projectpath = self.dlg.lineEdit_path.text()
-            #self.msgBar.pushMessage(self.getColor(layer), level=Qgis.Info, duration=3)
+            self.msgBar.pushMessage(self.layerEPSG(layer), level=Qgis.Info, duration=3)
             try:
                 
                 # Crea directorio
@@ -460,6 +469,7 @@ class QGIS2Mapea4:
                             jsFile.write(codejs1)
                             jsFile.write(str(mapeaControlsList))
                             jsFile.write(codejs2)
+                            jsFile.write("mapajs.setProjection (\"EPSG:%s*d\");\n" %(self.layerEPSG(layer)))
                             if self.dlg.checkBox_searchstreet.isChecked():
                                 jsFile.write("\nmapajs.addPlugin(new M.plugin.Searchstreet({\"locality\": \"%s\"}));\n" %(self.getINECod()))
                             jsFile.write(self.layerGeometryStyle(layer))
