@@ -18,7 +18,7 @@ mapajs = M.map({
     wmcfiles: basemaps
   });
 
-M.proxy(false);
+//M.proxy(false);
 
 mapajs.setProjection ("EPSG:25830*d");
 
@@ -50,5 +50,5 @@ var layerQGIS2Mapea4 = new M.layer.GeoJSON(
 layerQGIS2Mapea4.setStyle(estiloLayer);
 mapajs.addLayers(layerQGIS2Mapea4);
 
-M.proxy(false);
+//M.proxy(false);
 
