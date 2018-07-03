@@ -49,6 +49,7 @@ El código de ejemplos y el resultado lo tenéis a continuación.
 - Seleccionar varias capas vectoriales
 - Ampliar los complementos de Mapea4 a instalar
 - Aplicación de simbilogías para mapas temáticos (coropletas, categorizados, cluster)
+- Botón de descarga de capa y panel de información sobre la capa
 
 ## Changelog
 - 02.07.2018 V0.1: Primera versión
