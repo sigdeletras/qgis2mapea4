@@ -8,7 +8,7 @@
     <x>0</x>
     <y>0</y>
     <width>367</width>
-    <height>408</height>
+    <height>481</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,6 +30,45 @@
    </item>
    <item>
     <widget class="QLineEdit" name="lineEdit_title"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Proxy</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_proxy">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="radioButton_off">
+        <property name="text">
+         <string>Off (local)</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_on">
+        <property name="text">
+         <string>On (server)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </item>
    <item>
     <widget class="QLabel" name="label_select">
@@ -240,7 +279,7 @@
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>33</height>
+       <height>40</height>
       </size>
      </property>
     </spacer>
