@@ -1,21 +1,20 @@
 [general]
-name=QGIS a Mapea4
+name=QGIS2Mapea4
 qgisMinimumVersion=3.0
 qgisMaximumVersion=3.99
-description=Complemento para crear visores de mapas web con datos geográficos de Andalucía (España) usando la librería Mapea4
+description=Complemento para crear visores de mapas web con datos geográficos de Andalucía (España) usando la librería Mapea4. <br>Plugin to create web map with geographic data of Andalusia (Spain) using the Mapea4 javascript library.
 version=0.1
 author=Patricio Soriano :: SIGdeletras
 email=pasoriano@sigdeletras.com
 
-about=<p>El complemento QGIS2Mapea4 tiene como objetivo facilitar a los usuarios de QGIS que trabajen con datos ubicados en Andalucía, la generación de visores web de mapas usando la librería Mapea4.</p><p>La librería javascript Mapea4, basada en OpenLayers, es un desarrollo dentro del SIG Corporatico de la Junta de Andalucía. En la siguiente dirección <a href="https://github.com/sigcorporativo-ja/Mapea4">https://github.com/sigcorporativo-ja/Mapea4</a> puede consultarse toda la información sobre la misma.</p><p>QGIS2Mapea4 es un desarrollo personal de Patricio Soriano (sigdeletras.com)</p>
+about=<p>QGIS2Mapea4 tiene como objetivo facilitar a los usuarios de QGIS que trabajen con datos ubicados en Andalucía (España), la generación de visores web de mapas usando la librería Mapea4. La librería javascript Mapea4, basada en OpenLayers, es un desarrollo dentro del SIG Corporatico de la Junta de Andalucía. En la siguiente dirección <a href="https://github.com/sigcorporativo-ja/Mapea4">https://github.com/sigcorporativo-ja/Mapea4</a> puede consultarse toda la información sobre la misma. QGIS2Mapea4 es un desarrollo personal de Patricio Soriano (sigdeletras.com)</p><p>QGIS2Mapea4 aims to make it easier for QGIS users to make web maps with data located in Andalusia (Spain) using the Mapea4 library. The Mapea4 javascript library, based on OpenLayers, is a development within the Corporative GIS of the Regional Government of Andalucia. In the following link <a href="https://github.com/sigcorporativo-ja/Mapea4">https://github.com/sigcorporativo-ja/Mapea4</a> you can consult all the information about it. QGIS2Mapea4 is a personal development of Patricio Soriano (sigdeletras.com)</p>
 
 homepage=http://www.sigdeletras.com
-tracker=https://github.com/sigdeletras/qgis2mapea4
+tracker=https://github.com/sigdeletras/qgis2mapea4/issues
 repository=https://github.com/sigdeletras/qgis2mapea4
 
-
 changelog=02.07.2018 V0.1: Primera versión
-tags=web,webmapping,webmap,OpenLayers,HTML,Javascript,CSS,Andalucía,España,Mapea4,SIG Corporativo
+tags=web,webmapping,webmap,OpenLayers,HTML,Javascript,Andalucía,España,Mapea4,SIG Corporativo,Corporative GIS
 category=Web
 icon=icon.png
 experimental=False
